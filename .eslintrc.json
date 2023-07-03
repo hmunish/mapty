@@ -14,6 +14,17 @@
     "no-shadow": "off",
     "no-param-reassign": "off",
     "eol-last": "off",
+    "no-underscore-dangle": "off",
+    "no-undef": "off",
+    "max-classes-per-file": "off",
+    "no-console": "off",
+    "no-alert": "off",
+    "class-methods-use-this": "off",
+    "no-multi-assign": "off",
+    "no-return-assign": "off",
+    "consistent-return": "off",
+    "no-restricted-globals": "off",
+    "no-unused-vars": "off",
     "import/extensions": [
       1,
       {

@@ -11,7 +11,7 @@ const inputElevation = document.querySelector('.form__input--elevation');
 class Workout {
   date = new Date();
 
-  id = (`${Date.now()}`).slice(-10);
+  id = `${Date.now()}`.slice(-10);
 
   clicks = 0;
 
@@ -30,7 +30,7 @@ class Workout {
   }
 
   click() {
-    this.clicks++;
+    this.clicks += 1;
   }
 }
 
@@ -152,7 +152,9 @@ class App {
       if (
         !validInputs(distance, duration, cadence)
         || !allPositive(distance, duration, cadence)
-      ) { return alert('Inputs have to be positive numbers!'); }
+      ) {
+        return alert('Inputs have to be positive numbers!');
+      }
 
       workout = new Running([lat, lng], distance, duration, cadence);
     }
@@ -164,7 +166,9 @@ class App {
       if (
         !validInputs(distance, duration, elevation)
         || !allPositive(distance, duration)
-      ) { return alert('Inputs have to be positive numbers'); }
+      ) {
+        return alert('Inputs have to be positive numbers');
+      }
 
       workout = new Cycling([lat, lng], distance, duration, elevation);
     }
